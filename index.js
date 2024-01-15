@@ -57,7 +57,11 @@ const updateDOM = (moveOne, moveTwo, outcome) => {
 
   ////Add outcome result to the document
   //create p tag element
-  const result = document.createElement("p", { class: outcome });
+  const result = document.createElement("p");
+  //set class and id attributes
+  result.setAttribute("id", "outcome");
+  result.setAttribute("class", "outcome");
+
   // set text
   result.innerText = outcome;
   //add to the DOM
